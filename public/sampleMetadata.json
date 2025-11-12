@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "node-1",
+      "type": "input",
+      "position": { "x": 100, "y": 100 },
+      "data": { "label": "Start" },
+      "style": {
+        "backgroundColor": "#d0e1ff",
+        "color": "#0041d0",
+        "border": "2px solid #0041d0",
+        "padding": 10,
+        "borderRadius": 8
+      }
+    },
+    {
+      "id": "node-2",
+      "type": "default",
+      "position": { "x": 300, "y": 100 },
+      "data": { "label": "Process Data" },
+      "style": {
+        "backgroundColor": "#fff4e6",
+        "color": "#d46b08",
+        "border": "2px solid #d46b08",
+        "padding": 10,
+        "borderRadius": 8
+      }
+    },
+    {
+      "id": "node-3",
+      "type": "default",
+      "position": { "x": 500, "y": 100 },
+      "data": { "label": "Validate" },
+      "style": {
+        "backgroundColor": "#f6ffed",
+        "color": "#389e0d",
+        "border": "2px solid #389e0d",
+        "padding": 10,
+        "borderRadius": 8
+      }
+    },
+    {
+      "id": "node-4",
+      "type": "output",
+      "position": { "x": 700, "y": 100 },
+      "data": { "label": "End" },
+      "style": {
+        "backgroundColor": "#ffd0e8",
+        "color": "#ff0072",
+        "border": "2px solid #ff0072",
+        "padding": 10,
+        "borderRadius": 8
+      }
+    },
+    {
+      "id": "node-5",
+      "type": "default",
+      "position": { "x": 300, "y": 250 },
+      "data": { "label": "Error Handler" },
+      "style": {
+        "backgroundColor": "#fff1f0",
+        "color": "#cf1322",
+        "border": "2px solid #cf1322",
+        "padding": 10,
+        "borderRadius": 8
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "node-1",
+      "target": "node-2",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Initialize"
+    },
+    {
+      "id": "edge-2",
+      "source": "node-2",
+      "target": "node-3",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Send Data"
+    },
+    {
+      "id": "edge-3",
+      "source": "node-3",
+      "target": "node-4",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Success"
+    },
+    {
+      "id": "edge-4",
+      "source": "node-2",
+      "target": "node-5",
+      "type": "step",
+      "animated": false,
+      "label": "Error"
+    },
+    {
+      "id": "edge-5",
+      "source": "node-5",
+      "target": "node-1",
+      "type": "smoothstep",
+      "animated": false,
+      "label": "Retry"
+    }
+  ]
+}
