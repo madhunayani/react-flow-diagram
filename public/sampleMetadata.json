@@ -1,111 +1,362 @@
 {
   "nodes": [
     {
-      "id": "node-1",
+      "id": "start",
       "type": "input",
-      "position": { "x": 100, "y": 100 },
-      "data": { "label": "Start" },
+      "position": { "x": 400, "y": 50 },
+      "data": { "label": "🚗 START: Turn Ignition Key" },
       "style": {
-        "backgroundColor": "#d0e1ff",
-        "color": "#0041d0",
-        "border": "2px solid #0041d0",
-        "padding": 10,
-        "borderRadius": 8
+        "backgroundColor": "#52c41a",
+        "color": "#ffffff",
+        "border": "4px solid #237804",
+        "padding": 20,
+        "borderRadius": 12,
+        "fontWeight": "bold",
+        "fontSize": "16px",
+        "minWidth": "250px",
+        "textAlign": "center"
       }
     },
     {
-      "id": "node-2",
+      "id": "step1-air",
       "type": "default",
-      "position": { "x": 300, "y": 100 },
-      "data": { "label": "Process Data" },
+      "position": { "x": 150, "y": 180 },
+      "data": { "label": "STEP 1️⃣\n🌬️ Air Enters\n(Through Air Filter)" },
       "style": {
-        "backgroundColor": "#fff4e6",
+        "backgroundColor": "#e6f7ff",
+        "color": "#0050b3",
+        "border": "3px solid #1890ff",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "180px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "step2-fuel",
+      "type": "default",
+      "position": { "x": 650, "y": 180 },
+      "data": { "label": "STEP 2️⃣\n⛽ Fuel Injected\n(From Fuel Tank)" },
+      "style": {
+        "backgroundColor": "#fff7e6",
         "color": "#d46b08",
-        "border": "2px solid #d46b08",
-        "padding": 10,
-        "borderRadius": 8
+        "border": "3px solid #fa8c16",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "180px",
+        "textAlign": "center"
       }
     },
     {
-      "id": "node-3",
+      "id": "step3-mixing",
       "type": "default",
-      "position": { "x": 500, "y": 100 },
-      "data": { "label": "Validate" },
+      "position": { "x": 400, "y": 320 },
+      "data": { "label": "STEP 3️⃣\n🔄 Air + Fuel Mix\n(In Cylinder)" },
       "style": {
-        "backgroundColor": "#f6ffed",
-        "color": "#389e0d",
-        "border": "2px solid #389e0d",
-        "padding": 10,
-        "borderRadius": 8
+        "backgroundColor": "#f0f5ff",
+        "color": "#1d39c4",
+        "border": "3px solid #2f54eb",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "200px",
+        "textAlign": "center"
       }
     },
     {
-      "id": "node-4",
-      "type": "output",
-      "position": { "x": 700, "y": 100 },
-      "data": { "label": "End" },
-      "style": {
-        "backgroundColor": "#ffd0e8",
-        "color": "#ff0072",
-        "border": "2px solid #ff0072",
-        "padding": 10,
-        "borderRadius": 8
-      }
-    },
-    {
-      "id": "node-5",
+      "id": "step4-compression",
       "type": "default",
-      "position": { "x": 300, "y": 250 },
-      "data": { "label": "Error Handler" },
+      "position": { "x": 400, "y": 460 },
+      "data": { "label": "STEP 4️⃣\n⚙️ Piston Compresses\n(Upward Stroke)" },
+      "style": {
+        "backgroundColor": "#f9f0ff",
+        "color": "#531dab",
+        "border": "3px solid #722ed1",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "200px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "step5-ignition",
+      "type": "default",
+      "position": { "x": 400, "y": 600 },
+      "data": { "label": "STEP 5️⃣\n⚡ Spark Plug Fires\n(BOOM! Explosion)" },
       "style": {
         "backgroundColor": "#fff1f0",
         "color": "#cf1322",
-        "border": "2px solid #cf1322",
-        "padding": 10,
-        "borderRadius": 8
+        "border": "4px solid #f5222d",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "200px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "step6-power",
+      "type": "default",
+      "position": { "x": 400, "y": 740 },
+      "data": { "label": "STEP 6️⃣\n💪 Piston Pushed Down\n(Power Stroke)" },
+      "style": {
+        "backgroundColor": "#fff0f6",
+        "color": "#c41d7f",
+        "border": "3px solid #eb2f96",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "200px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "step7-crankshaft",
+      "type": "default",
+      "position": { "x": 400, "y": 880 },
+      "data": { "label": "STEP 7️⃣\n🔧 Crankshaft Spins\n(Rotational Motion)" },
+      "style": {
+        "backgroundColor": "#e6fffb",
+        "color": "#006d75",
+        "border": "3px solid #13c2c2",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "200px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "step8-exhaust",
+      "type": "default",
+      "position": { "x": 150, "y": 1020 },
+      "data": { "label": "STEP 8️⃣\n💨 Exhaust Gases Exit\n(Through Tailpipe)" },
+      "style": {
+        "backgroundColor": "#f5f5f5",
+        "color": "#595959",
+        "border": "3px solid #8c8c8c",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "200px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "step9-wheels",
+      "type": "output",
+      "position": { "x": 650, "y": 1020 },
+      "data": { "label": "STEP 9️⃣\n🏎️ Wheels Turn\n(CAR MOVES!)" },
+      "style": {
+        "backgroundColor": "#f6ffed",
+        "color": "#237804",
+        "border": "4px solid #52c41a",
+        "padding": 20,
+        "borderRadius": 12,
+        "fontWeight": "bold",
+        "fontSize": "16px",
+        "minWidth": "200px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "cycle-repeat",
+      "type": "default",
+      "position": { "x": 400, "y": 1180 },
+      "data": { "label": "🔄 CYCLE REPEATS\n(Thousands of Times Per Minute!)" },
+      "style": {
+        "backgroundColor": "#fffbe6",
+        "color": "#ad8b00",
+        "border": "3px dashed #faad14",
+        "padding": 18,
+        "borderRadius": 10,
+        "fontWeight": "bold",
+        "fontSize": "14px",
+        "minWidth": "280px",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "support-oil",
+      "type": "default",
+      "position": { "x": 50, "y": 600 },
+      "data": { "label": "🛢️ Engine Oil\n(Lubricates Moving Parts)" },
+      "style": {
+        "backgroundColor": "#fffbe6",
+        "color": "#ad6800",
+        "border": "2px solid #faad14",
+        "padding": 15,
+        "borderRadius": 8,
+        "fontSize": "12px",
+        "minWidth": "180px",
+        "textAlign": "center",
+        "opacity": 0.9
+      }
+    },
+    {
+      "id": "support-coolant",
+      "type": "default",
+      "position": { "x": 750, "y": 600 },
+      "data": { "label": "❄️ Coolant\n(Prevents Overheating)" },
+      "style": {
+        "backgroundColor": "#e6f7ff",
+        "color": "#003a8c",
+        "border": "2px solid #1890ff",
+        "padding": 15,
+        "borderRadius": 8,
+        "fontSize": "12px",
+        "minWidth": "180px",
+        "textAlign": "center",
+        "opacity": 0.9
       }
     }
   ],
   "edges": [
     {
-      "id": "edge-1",
-      "source": "node-1",
-      "target": "node-2",
+      "id": "edge-start-air",
+      "source": "start",
+      "target": "step1-air",
       "type": "smoothstep",
       "animated": true,
-      "label": "Initialize"
+      "label": "→",
+      "style": { "stroke": "#52c41a", "strokeWidth": 3 }
     },
     {
-      "id": "edge-2",
-      "source": "node-2",
-      "target": "node-3",
+      "id": "edge-start-fuel",
+      "source": "start",
+      "target": "step2-fuel",
       "type": "smoothstep",
       "animated": true,
-      "label": "Send Data"
+      "label": "→",
+      "style": { "stroke": "#52c41a", "strokeWidth": 3 }
     },
     {
-      "id": "edge-3",
-      "source": "node-3",
-      "target": "node-4",
+      "id": "edge-air-mixing",
+      "source": "step1-air",
+      "target": "step3-mixing",
       "type": "smoothstep",
       "animated": true,
-      "label": "Success"
+      "label": "Air Flow →",
+      "style": { "stroke": "#1890ff", "strokeWidth": 3 }
     },
     {
-      "id": "edge-4",
-      "source": "node-2",
-      "target": "node-5",
+      "id": "edge-fuel-mixing",
+      "source": "step2-fuel",
+      "target": "step3-mixing",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Fuel Flow →",
+      "style": { "stroke": "#fa8c16", "strokeWidth": 3 }
+    },
+    {
+      "id": "edge-mixing-compression",
+      "source": "step3-mixing",
+      "target": "step4-compression",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "↓",
+      "style": { "stroke": "#2f54eb", "strokeWidth": 3 }
+    },
+    {
+      "id": "edge-compression-ignition",
+      "source": "step4-compression",
+      "target": "step5-ignition",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Compressed ↓",
+      "style": { "stroke": "#722ed1", "strokeWidth": 3 }
+    },
+    {
+      "id": "edge-ignition-power",
+      "source": "step5-ignition",
+      "target": "step6-power",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "💥 EXPLOSION ↓",
+      "style": { "stroke": "#f5222d", "strokeWidth": 4 }
+    },
+    {
+      "id": "edge-power-crankshaft",
+      "source": "step6-power",
+      "target": "step7-crankshaft",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Force Applied ↓",
+      "style": { "stroke": "#eb2f96", "strokeWidth": 3 }
+    },
+    {
+      "id": "edge-crankshaft-exhaust",
+      "source": "step7-crankshaft",
+      "target": "step8-exhaust",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Exhaust Valve Opens →",
+      "style": { "stroke": "#8c8c8c", "strokeWidth": 3 }
+    },
+    {
+      "id": "edge-crankshaft-wheels",
+      "source": "step7-crankshaft",
+      "target": "step9-wheels",
+      "type": "smoothstep",
+      "animated": true,
+      "label": "Power Transmitted →",
+      "style": { "stroke": "#52c41a", "strokeWidth": 4 }
+    },
+    {
+      "id": "edge-exhaust-cycle",
+      "source": "step8-exhaust",
+      "target": "cycle-repeat",
+      "type": "smoothstep",
+      "animated": false,
+      "label": "→",
+      "style": { "stroke": "#595959", "strokeWidth": 2 }
+    },
+    {
+      "id": "edge-wheels-cycle",
+      "source": "step9-wheels",
+      "target": "cycle-repeat",
+      "type": "smoothstep",
+      "animated": false,
+      "label": "→",
+      "style": { "stroke": "#595959", "strokeWidth": 2 }
+    },
+    {
+      "id": "edge-cycle-start",
+      "source": "cycle-repeat",
+      "target": "start",
       "type": "step",
       "animated": false,
-      "label": "Error"
+      "label": "← Repeats Continuously",
+      "style": { "stroke": "#faad14", "strokeWidth": 2, "strokeDasharray": "5,5" }
     },
     {
-      "id": "edge-5",
-      "source": "node-5",
-      "target": "node-1",
-      "type": "smoothstep",
+      "id": "edge-oil-support",
+      "source": "support-oil",
+      "target": "step6-power",
+      "type": "straight",
       "animated": false,
-      "label": "Retry"
+      "label": "Reduces Friction",
+      "style": { "stroke": "#faad14", "strokeWidth": 2, "strokeDasharray": "3,3" }
+    },
+    {
+      "id": "edge-coolant-support",
+      "source": "support-coolant",
+      "target": "step5-ignition",
+      "type": "straight",
+      "animated": false,
+      "label": "Cools Engine",
+      "style": { "stroke": "#1890ff", "strokeWidth": 2, "strokeDasharray": "3,3" }
     }
   ]
 }

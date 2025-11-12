@@ -1,6 +1,3 @@
-Here's the complete README.md file in a single code block that you can copy with one click:
-
-```markdown
 # React Flow Diagram Application
 
 A dynamic, interactive diagram flow application built with React and React Flow that allows users to create, edit, and manage node-edge diagrams through an intuitive interface.
@@ -26,7 +23,7 @@ Before running this application, ensure you have:
 
 1. Clone the repository:
 ```
-git clone <your-repo-url>
+git clone https://github.com/madhunayani/react-flow-diagram.git
 cd react-flow-diagram
 ```
 
@@ -56,7 +53,6 @@ http://localhost:3000
 
 ### Project Structure
 
-```
 react-flow-diagram/
 ├── public/
 │   ├── index.html
@@ -74,7 +70,7 @@ react-flow-diagram/
 │   ├── App.js                       # Root component
 │   └── index.js                     # Entry point
 └── README.md
-```
+
 
 ### Component Breakdown
 
@@ -121,7 +117,6 @@ Zustand store managing:
 
 ### Sample Structure
 
-```
 {
   "nodes": [
     {
@@ -149,7 +144,6 @@ Zustand store managing:
     }
   ]
 }
-```
 
 ### Node Properties
 
